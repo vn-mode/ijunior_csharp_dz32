@@ -21,10 +21,10 @@ namespace vn_mode_csharp_dz32
 
             for (int i = array.Length - 1; i >= 1; i--)
             {
-                int randomNumber = random.Next(i + 1);
-                int tempNumber = array[randomNumber];
-                array[randomNumber] = array[i];
-                array[i] = tempNumber;
+                int indexArray = random.Next(i + 1);
+                int tempValue = array[indexArray];
+                array[indexArray] = array[i];
+                array[i] = tempValue;
             }
         }
     }
